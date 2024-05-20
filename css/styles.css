@@ -78,7 +78,6 @@ p {
 .bg-header {
 	display: flex;
 	background-image: url(/SaaS-Project/saas-project-assets/backgrounds/background-top.svg);
-	padding: var(--size-100);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -97,8 +96,8 @@ p {
 
 .hero-section {
 	display: flex;
-	width: 100%;
 	flex: 1;
+	padding-top: var(--size-100);
 }
 
 .hero-wrapper {
