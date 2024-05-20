@@ -1,0 +1,325 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 500;
+	transition: ease-in-out 0.3s;
+}
+
+.header-logo img {
+	height: var(--size-40);
+	width: var(--size-150);
+}
+
+.navbar.sticky {
+	background-color: var(--white);
+	box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
+
+.navbar-toggler {
+	position: absolute;
+	right: var(--size-20);
+	top: var(--size-10);
+	outline: none;
+}
+
+.navbar-toggler span {
+	color: var(--white);
+	font-size: var(--size-20);
+	cursor: pointer;
+	pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+	display: none;
+}
+
+.navbar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: var(--size-16);
+}
+
+.navbar .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar-brand {
+	margin-right: auto;
+	font-size: 2rem;
+	font-weight: 700;
+	width: 100%;
+	transition: ease-in-out 0.3s;
+	color: #666;
+	margin-right: 300px;
+}
+
+.nav-link a {
+	color: var(--font-color-light);
+	font-weight: 300;
+	font-family: "Hind", sans-serif;
+	margin-right: var(--size-30);
+	line-height: var(--size-20);
+}
+
+h2,
+h3 {
+	color: var(--font-color-dark);
+}
+
+p {
+	color: var(--font-color-light);
+}
+
+.bg-header {
+	display: flex;
+	background-image: url(/SaaS-Project/saas-project-assets/backgrounds/background-top.svg);
+	padding: var(--size-100);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg-header::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	content: "";
+}
+
+.hero-section {
+	display: flex;
+	width: 100%;
+	flex: 1;
+}
+
+.hero-wrapper {
+	justify-content: space-between;
+	width: 100%;
+}
+
+.block-text {
+	padding-right: var(--size-50);
+}
+
+.block-text span {
+	color: var(--font-color-dark);
+	font-weight: 300;
+}
+
+.block-text h2 {
+	font-size: var(--size-40);
+	font-family: "Hinds", sans-serif;
+	font-weight: 600;
+	margin-bottom: var(--size-20);
+	line-height: 1.3;
+	margin-top: 0.5rem;
+}
+
+.fa-solid {
+	margin-right: var(--size-10);
+	background-color: var(--white);
+	color: var(--font-color-link);
+	padding: 5px;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+}
+
+.learn-more {
+	padding-left: var(--size-18);
+	color: var(--font-color-link);
+	font-size: var(--size-16);
+	font-weight: 700;
+}
+
+.jumbotron {
+	width: 100%;
+}
+
+.logo-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	text-align: center;
+}
+
+.logo-grid img {
+	width: 100%;
+}
+
+.logo-big {
+	height: 80px;
+	width: 80px;
+}
+
+.logo-small {
+	height: 60px;
+	width: 60px;
+}
+
+.logo-grid .logo-1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo-grid .logo-2 {
+	grid-area: 1 / 3 / 2 / 4;
+}
+
+.logo-grid .logo-3 {
+	grid-area: 1 / 5 / 2 / 6;
+}
+.logo-grid .logo-4 {
+	grid-area: 4 / 1 / 5 / 2;
+}
+
+.logo-grid .logo-5 {
+	grid-area: 5 / 2 / 6 / 3;
+}
+.logo-grid .logo-6 {
+	grid-area: 4 / 4 / 5 / 5;
+}
+.logo-grid .logo-7 {
+	grid-area: 6 / 5 / 6 / 6;
+}
+
+.bg-white {
+	background: var(--white);
+	margin-top: 30px;
+}
+.benefits-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service-grid {
+	display: flex;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: var(--size-20);
+	padding-bottom: var(--size-100);
+}
+
+.service-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	gap: 20px;
+}
+
+.service-card .service-img {
+	width: auto;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.service-card .service-img img {
+	width: 50px;
+	height: auto;
+}
+
+.service-card h3 {
+	margin: 10px 0;
+	font-size: var(--size-18);
+	font-weight: 600;
+}
+
+.service-card p {
+	font-size: var(--size-16);
+}
+
+.benefits-text h2 {
+	font-size: 25px;
+	font-weight: 600;
+	color: var(--font-color-dark);
+}
+
+.benefits-text p {
+	margin-top: 0;
+	margin-bottom: 50px;
+	color: var(--font-color-light);
+}
+
+.banner {
+	padding: 0px 30px 80px 30px;
+	background-color: #f8fafe;
+}
+
+.banner-section {
+	display: flex;
+	padding-top: var(--size-100);
+}
+
+.banner-section-text h3 {
+	font-size: 25px;
+	margin-top: var(--size-150);
+}
+
+.why-section {
+	background-color: var(--white);
+}
+
+.why-front-text {
+	text-align: center;
+}
+
+.why-front-text h3 {
+	font-size: 26px;
+}
+
+.why-front-text p {
+	font-size: var(--size-16);
+}
+
+.why-front-bullet {
+	text-align: center;
+	margin-top: var(--size-30);
+	margin-bottom: var(--size-50);
+}
+
+.play-bg {
+	background-image: url(../SaaS-Project/saas-project-assets/banners/banner_two.jpg);
+	width: 100%;
+	height: 414px;
+	margin-bottom: 20px;
+}
+
+.video-play-btn i {
+	display: flex;
+	color: var(--black);
+	height: 70px;
+	width: 70px;
+	padding: 10px 0px 10px 4px;
+	position: relative;
+	top: 172px;
+	left: 447px;
+	z-index: 1;
+	background-color: var(--white);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: var(--size-20);
+}
+
+.container .hubspot {
+	display: flex;
+}
