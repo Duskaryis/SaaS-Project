@@ -49,7 +49,6 @@
 }
 
 .navbar-brand {
-	margin-right: auto;
 	font-size: 2rem;
 	font-weight: 700;
 	width: 100%;
@@ -269,9 +268,17 @@ p {
 	padding-bottom: 0px;
 }
 
+.banner-section-text {
+	width: 100%;
+	text-align: ;
+}
+
+.banner-section {
+	width: 100%;
+}
+
 .banner-section-text h3 {
 	font-size: 25px;
-	margin-top: var(--size-150);
 }
 
 .why-section {
@@ -296,11 +303,64 @@ p {
 	margin-bottom: var(--size-50);
 }
 
+.why-front-bullets-list {
+	display: grid;
+	grid-template-columns: auto;
+	grid-auto-flow: column;
+}
+.why-front-bullets-list .bullet-item:first-child > .bullet:before,
+.why-front-bullets-list .bullet-item:last-child > .bullet:after {
+	content: unset;
+}
+
+.bullet-item {
+	display: flex;
+	flex-direction: column;
+}
+.bullet-item .bullet {
+	display: grid;
+	grid-template-columns: 1fr min-content 1fr;
+	gap: 6px;
+}
+.bullet-item .bullet::before {
+	align-self: center;
+	grid-column: 1 / span 1;
+}
+.bullet-item .bullet::after {
+	align-self: center;
+	grid-column: 3 / span 1;
+}
+.bullet-item .bullet::before,
+.bullet-item .bullet::after {
+	content: "";
+	height: 1px;
+	width: 100%;
+	background-color: #e6e9f2;
+}
+.bullet-item .bullet .bullet-inner {
+	grid-column: 2 / span 1;
+	width: 50px;
+	height: 50px;
+	background-color: #ecf2ff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bullet-item .bullet .bullet-inner .dot {
+	width: 5px;
+	height: 5px;
+	background-color: #0066ff;
+	border-radius: 50%;
+}
+.bullet-item span {
+	margin-top: 20px;
+	text-align: center;
+}
+
 .play-bg {
 	background-image: url(../SaaS-Project/saas-project-assets/banners/banner_two.jpg);
-	width: 100%;
-	height: 414px;
-	margin-bottom: 20px;
+	background-size: cover;
 }
 
 .video-play-btn i {
@@ -319,8 +379,4 @@ p {
 	align-items: center;
 	text-align: center;
 	font-size: var(--size-20);
-}
-
-.container .hubspot {
-	display: flex;
 }
