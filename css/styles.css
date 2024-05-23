@@ -430,8 +430,8 @@ p {
 
 .hubspot-back-img {
 	position: absolute;
-	max-width: 200px;
-	left: -50px;
+	max-width: 240px;
+	left: -55px;
 	bottom: -50px;
 	z-index: -1;
 }
@@ -447,7 +447,21 @@ p {
 }
 
 .hubspot-text img.hubspot-logo {
-	width: 100%;
+	width: 25%;
+}
+
+.employee-name {
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--black);
+	margin-bottom: 0;
+}
+
+.employee-job {
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .brands-section {
