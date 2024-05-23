@@ -77,7 +77,6 @@ p {
 .bg-header {
 	display: flex;
 	background-image: url(../SaaS-Project/saas-project-assets/backgrounds/background-top.svg);
-	background-repeat: no-repeat;
 }
 
 .bg-header::before {
@@ -159,7 +158,7 @@ p {
 	background-color: var(--white);
 	box-shadow: 0px 3px 13px 0px #00000040;
 	border-radius: 50%;
-	padding: 10px;
+	padding: 14px;
 }
 
 .logo-small {
@@ -216,7 +215,6 @@ p {
 
 .service-card {
 	background: #fff;
-	border: 1px solid #ddd;
 	border-radius: 8px;
 	box-shadow: 0px 10px 20px 0px #00000026;
 	padding: 20px;
@@ -313,6 +311,7 @@ p {
 	grid-template-columns: auto;
 	grid-auto-flow: column;
 }
+
 .why-front-bullets-list .bullet-item:first-child > .bullet:before,
 .why-front-bullets-list .bullet-item:last-child > .bullet:after {
 	content: unset;
@@ -322,19 +321,23 @@ p {
 	display: flex;
 	flex-direction: column;
 }
+
 .bullet-item .bullet {
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	gap: 6px;
 }
+
 .bullet-item .bullet::before {
 	align-self: center;
 	grid-column: 1 / span 1;
 }
+
 .bullet-item .bullet::after {
 	align-self: center;
 	grid-column: 3 / span 1;
 }
+
 .bullet-item .bullet::before,
 .bullet-item .bullet::after {
 	content: "";
@@ -342,6 +345,7 @@ p {
 	width: 100%;
 	background-color: #e6e9f2;
 }
+
 .bullet-item .bullet .bullet-inner {
 	grid-column: 2 / span 1;
 	width: 50px;
@@ -352,37 +356,188 @@ p {
 	align-items: center;
 	justify-content: center;
 }
+
 .bullet-item .bullet .bullet-inner .dot {
 	width: 5px;
 	height: 5px;
 	background-color: #0066ff;
 	border-radius: 50%;
 }
+
 .bullet-item span {
 	margin-top: 20px;
 	text-align: center;
 	font-weight: 600;
 }
 
-.play-bg {
-	display: flex;
-	background-image: url(../SaaS-Project/saas-project-assets/banners/banner_two.jpg);
+.why-front-img {
+	display: grid;
+	grid-template-columns: 30px auto 30px;
+	position: relative;
 }
 
-.video-play-btn i {
+.why-front-img img {
+	grid-column: 1/-1;
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+.why-front-img .why-front-player {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	display: flex;
-	color: var(--black);
-	height: 70px;
-	width: 70px;
-	padding: 10px 0px 10px 4px;
-	position: relative;
-	top: 172px;
-	left: 447px;
-	z-index: 1;
-	background-color: var(--white);
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+}
+
+.why-front-img .why-front-player .play-container {
+	background-color: #ffffff;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	box-shadow: 0 3px 12px rgba(32, 32, 35, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.why-front-img .why-front-player .play-container i {
+	position: relative;
+	left: 6px;
+	color: var(--black);
+	font-size: var(--size-18);
+}
+
+.hubspot-container {
+	display: grid;
+	grid-template-columns: min-content auto;
+	gap: 80px;
+}
+
+.hubspot-img {
+	position: relative;
+	width: 480px;
+	height: 540px;
+	background: url(../SaaS-Project/saas-project-assets/people/woman_three.jpg);
+	background-size: 100%;
+	overflow: visible;
+	border: 5px;
+}
+
+.hubspot-back-img {
+	position: absolute;
+	max-width: 200px;
+	left: -50px;
+	bottom: -50px;
+	z-index: -1;
+}
+
+.hubspot-text {
+	align-self: center;
+	font-size: 22px;
+}
+
+.hubspot-text p {
+	padding-top: 20px;
+	line-height: 36px;
+}
+
+.hubspot-text img.hubspot-logo {
+	width: 100%;
+}
+
+.brands-section {
+	padding-bottom: 80px;
+}
+
+.trusted-text h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 150px;
+	font-weight: 700;
+	font-size: 22px;
+	color: #5f6368;
+	margin-bottom: 30px;
+}
+
+.trusted-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: auto;
+	gap: 100px;
+}
+
+.trusted-img {
+	width: 100%;
+	margin: auto;
+}
+
+.price-text {
+	font-size: 26px;
 	text-align: center;
-	font-size: var(--size-20);
+}
+
+.price-subtext {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--font-color-light);
+}
+
+.price-plans-container {
+	display: flex;
+	gap: 40px;
+}
+
+.main-plan {
+	display: grid;
+	grid-column: 1 / span1;
+	grid-row: 1/-1;
+	padding: 40px;
+}
+
+.price-text h3 {
+	margin: 20px 0 10px 0;
+}
+
+.price-text .price-subtext {
+	font-size: 14px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.plan-content {
+	align-self: center;
+}
+
+.plan-content .plan-info .price {
+	padding-bottom: 30px;
+	border-bottom: 1px solid var(--font-color-light);
+}
+
+.plan-content .plan-info .price .price-sum {
+	font-size: 50px;
+}
+
+.plan-content .plan-info .subtext {
+	margin-top: 30px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.plan-content .plan-content-action .actionHolder {
+	display: flex;
+	flex-direction: column;
+}
+
+.plan-content .plan-content-action .actionHolder .special-text {
+	font-size: 12px;
+}
+
+.plan-content .plan-content-action .actionHolder a {
+	margin-top: 40px;
+	margin-bottom: 5px;
 }
