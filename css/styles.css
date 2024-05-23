@@ -138,6 +138,11 @@ p {
 	width: 100%;
 }
 
+.jumobtron-content {
+	animation: slideUp 0.5s up;
+	opacity: 0;
+}
+
 .logo-grid {
 	width: 100%;
 	display: grid;
@@ -270,7 +275,7 @@ p {
 
 .banner-section-text {
 	width: 100%;
-	text-align: ;
+	padding-left: 30px;
 }
 
 .banner-section {
@@ -356,11 +361,12 @@ p {
 .bullet-item span {
 	margin-top: 20px;
 	text-align: center;
+	font-weight: 600;
 }
 
 .play-bg {
+	display: flex;
 	background-image: url(../SaaS-Project/saas-project-assets/banners/banner_two.jpg);
-	background-size: cover;
 }
 
 .video-play-btn i {
