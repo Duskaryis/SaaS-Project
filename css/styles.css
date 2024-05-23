@@ -76,7 +76,7 @@ p {
 
 .bg-header {
 	display: flex;
-	background-image: url(/SaaS-Project/saas-project-assets/backgrounds/background-top.svg);
+	background-image: url(../SaaS-Project/saas-project-assets/backgrounds/background-top.svg);
 	background-repeat: no-repeat;
 }
 
