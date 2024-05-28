@@ -220,7 +220,7 @@
 					the web - it is the starting point for creative sites
 				</p>
 			</div>
-			<div class="why-front-bullet">
+			<div class="container why-front-bullet">
 				<div class="why-front-bullets-list">
 					<div class="bullet-item">
 						<div class="bullet">
@@ -256,7 +256,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="why-front-img">
+			<div class="container why-front-img">
 				<img
 					src="./SaaS-Project/saas-project-assets/banners/banner_two.jpg"
 					alt="" />
@@ -329,8 +329,8 @@
 		<!--Pricing-->
 
 		<div id="pricing"></div>
-		<section class="container">
-			<div class="container">
+		<section class="grid-main">
+			<div class="content-grid">
 				<div class="price-text">
 					<h2>Pricing</h2>
 					<div class="price-subtext">
@@ -364,51 +364,146 @@
 							</div>
 						</div>
 					</div>
-					<div class="service-card price-info">
-						<img
-							class="service-img"
-							src="./SaaS-Project/saas-project-assets/icons/components.svg"
-							alt="" />
-						<h3>Hundreds of components</h3>
-						<p>
-							Achieve maximum productivity with minimum effort with Front and
-							creat robust limitless products.
-						</p>
-					</div>
-					<div class="service-card price-info">
-						<img
-							class="service-img"
-							src="./SaaS-Project/saas-project-assets/icons/images.svg"
-							alt="" />
-						<h3>Images included</h3>
-						<p>
-							Achieve maximum productivity with minimum effort with Front and
-							creat robust limitless products.
-						</p>
-					</div>
-					<div class="service-card price-info">
-						<img
-							class="service-img"
-							src="./SaaS-Project/saas-project-assets/icons/cancel.svg"
-							alt="" />
-						<h3>Cancel anytime</h3>
-						<p>
-							Achieve maximum productivity with minimum effort with Front and
-							creat robust limitless products.
-						</p>
-					</div>
-					<div class="service-card price-info">
-						<img
-							class="service-img"
-							src="./SaaS-Project/saas-project-assets/icons/moneyback.svg"
-							alt="" />
-						<h3>Money back</h3>
-						<p>
-							Achieve maximum productivity with minimum effort with Front and
-							creat robust limitless products.
-						</p>
+					<div class="price-info container">
+						<div class="top-cards">
+							<div class="content-card price-info">
+								<img
+									class="service-img"
+									src="./SaaS-Project/saas-project-assets/icons/components.svg"
+									alt="" />
+								<h3>Hundreds of components</h3>
+								<p>
+									Achieve maximum productivity with minimum effort with Front
+									and creat robust limitless products.
+								</p>
+							</div>
+							<div class="content-card price-info">
+								<img
+									class="service-img"
+									src="./SaaS-Project/saas-project-assets/icons/images.svg"
+									alt="" />
+								<h3>Images included</h3>
+								<p>
+									Achieve maximum productivity with minimum effort with Front
+									and creat robust limitless products.
+								</p>
+							</div>
+						</div>
+						<div class="bottom-cards">
+							<div class="content-card price-info">
+								<img
+									class="service-img"
+									src="./SaaS-Project/saas-project-assets/icons/cancel.svg"
+									alt="" />
+								<h3>Cancel anytime <span class="sketch">sketch</span></h3>
+								<p>
+									Achieve maximum productivity with minimum effort with Front
+									and creat robust limitless products.
+								</p>
+							</div>
+							<div class="content-card price-info">
+								<img
+									class="service-img"
+									src="./SaaS-Project/saas-project-assets/icons/moneyback.svg"
+									alt="" />
+								<h3>Money back</h3>
+								<p>
+									Achieve maximum productivity with minimum effort with Front
+									and create robust limitless products.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!--Form-->
+		<section class="hire-us-section">
+			<div class="container hire-us">
+				<div class="hire-us-text">
+					<h3>Hire Us</h3>
+					<p>
+						Whatever your goal - <br />
+						we will get you there
+					</p>
+					<hr />
+				</div>
+				<div class="employee-name">Charlotte Moore</div>
+				<div class="employee-job">Head of Commericals, Slack</div>
+				<div class="pfps">
+					<img src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />
+				</div>
+			</div>
+			<div class="container form">
+				<form action="#" method="post">
+					<div class="form-group">
+						<label for="first_name1">First Name</label>
+						<input
+							type="text"
+							id="first_name1"
+							name="first_name1"
+							placeholder="First Name" />
+						<input
+							type="text"
+							id="first_name2"
+							name="first_name2"
+							placeholder="First Name" />
+					</div>
+					<div class="form-group">
+						<label for="last_name1">Last Name</label>
+						<input
+							type="text"
+							id="last_name1"
+							name="last_name1"
+							placeholder="Last Name" />
+						<input
+							type="text"
+							id="last_name2"
+							name="last_name2"
+							placeholder="Last Name" />
+					</div>
+					<div class="form-group">
+						<label for="budget">Budget</label>
+						<select id="budget" name="budget">
+							<option value="">Select Budget</option>
+							<option value="100">$100</option>
+							<option value="500">$500</option>
+							<option value="1000">$1000</option>
+							<option value="5000">$5000</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="country">Country</label>
+						<select id="country" name="country">
+							<option value="">Select Country</option>
+							<option value="USA">United States</option>
+							<option value="UK">United Kingdom</option>
+							<option value="CA">Canada</option>
+							<option value="AU">Australia</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="comments">Comments</label>
+						<textarea
+							id="comments"
+							name="comments"
+							placeholder="Enter your comments here"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Radio Button</label>
+						<input type="radio" id="option1" name="option" value="option1" />
+						<label class="radio-label" for="option1">Option 1</label>
+						<input type="radio" id="option2" name="option" value="option2" />
+						<label class="radio-label" for="option2">Option 2</label>
+					</div>
+					<div class="form-group">
+						<p>Text after radio button.</p>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
 			</div>
 		</section>
 

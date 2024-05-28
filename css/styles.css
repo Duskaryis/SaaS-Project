@@ -212,7 +212,7 @@ p {
 	gap: var(--size-20);
 	padding-bottom: var(--size-100);
 }
-
+/*Youre here to grab Service card for content card*/
 .service-card {
 	background: #fff;
 	border-radius: 8px;
@@ -491,9 +491,14 @@ p {
 	margin: auto;
 }
 
+.pricing-container {
+	display: grid;
+}
+
 .price-text {
 	font-size: 26px;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 .price-subtext {
@@ -522,6 +527,38 @@ p {
 	font-size: 14px;
 	line-height: 40px;
 	margin-bottom: 10px;
+}
+
+.content-card img {
+	display: block;
+	width: 50px;
+}
+
+.content-card h3 {
+	margin: 30px 0 20px 0;
+	display: inline-block;
+}
+
+.content-card .subtext {
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.content-card span.tech {
+	font-size: 12px;
+	color: #ffffff;
+	padding: 3px 7px;
+	margin-left: 5px;
+	background-color: #00c9a7;
+	border-radius: 10px;
+}
+
+.content-card .sketch {
+	background-color: #01c9a7;
+	font-size: 12px;
+	border-radius: 26px;
+	padding: 5px 15px;
+	color: white;
 }
 
 .plan-content {
@@ -555,4 +592,24 @@ p {
 .plan-content .plan-content-action .actionHolder a {
 	margin-top: 40px;
 	margin-bottom: 5px;
+}
+
+.top-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.bottom-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.hire-us-section {
+	display: flex;
+}
+
+.container.hire-us {
+	background-color: #20335b;
 }
