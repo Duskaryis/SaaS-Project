@@ -25,7 +25,7 @@
 }
 
 .navbar-toggler span {
-	color: var(--white);
+	color: var(--black);
 	font-size: var(--size-20);
 	cursor: pointer;
 	pointer-events: none;
@@ -492,10 +492,6 @@ p {
 	margin: auto;
 }
 
-.pricing-container {
-	display: grid;
-}
-
 .price-text {
 	font-size: 26px;
 	text-align: center;
@@ -511,13 +507,6 @@ p {
 .price-plans-container {
 	display: flex;
 	gap: 40px;
-}
-
-.main-plan {
-	display: grid;
-	grid-column: 1 / span1;
-	grid-row: 1/-1;
-	padding: 40px;
 }
 
 .price-text h3 {
@@ -677,4 +666,7 @@ input {
 .link {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.link a {
 }
