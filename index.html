@@ -327,8 +327,8 @@
 		<!--Pricing-->
 
 		<div id="pricing"></div>
-		<section class="price-section">
-			<div class="container price">
+		<section class="price-section container">
+			<div class="price">
 				<div class="price-text">
 					<h2>Pricing</h2>
 					<div class="price-subtext">
@@ -413,110 +413,217 @@
 
 		<!--Hire Us-->
 		<section class="hire-us-section">
-			<div class="container hire-us">
-				<div class="hire-us-text">
-					<h3>Hire Us</h3>
-					<p>
-						Whatever your goal - <br />
-						we will get you there
-					</p>
-					<hr />
-					<p>
-						<em
-							>"I love front! I love the ease of use, I love the <br />
-							fact that I have total creative freedom..."</em
-						>
-					</p>
-					<div class="employee-name">Charlotte Moore</div>
-					<div class="employee-job">Head of Commericals, Slack</div>
-					<div class="pfps">
+			<div class="hire-us">
+				<div class="container">
+					<div class="hire-us-text">
+						<h3>Hire Us</h3>
+						<p>
+							Whatever your goal - <br />
+							we will get you there
+						</p>
+						<hr />
+						<p>
+							<em
+								>"I love front! I love the ease of use, I love the <br />
+								fact that I have total creative freedom..."</em
+							>
+						</p>
+						<div class="employees">
+							<div class="employee-name">Charlotte Moore</div>
+							<div class="employee-job">Head of Commericals, Slack</div>
+							<div class="pfps">
+								<img
+									class="pfps-small"
+									src="./SaaS-Project/saas-project-assets/people/woman_two.jpg"
+									alt="" />
+								<img
+									class="pfps-small"
+									src="./SaaS-Project/saas-project-assets/people/woman_one.jpg"
+									alt="" />
+								<img
+									class="pfps-big"
+									src="./SaaS-Project/saas-project-assets/people/man_one.jpg"
+									alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container form-container form">
+					<form action="#" method="post">
+						<h3>
+							Fill out the form and we'll be in touch as soon as <br />
+							possible
+						</h3>
+						<div class="form-group container">
+							<label for="first_name1"></label>
+							<input
+								type="text"
+								id="first_name1"
+								name="first_name1"
+								placeholder="First Name" />
+							<input
+								type="text"
+								id="last_name2"
+								name="last_name2"
+								placeholder="Last Name" />
+						</div>
+						<div class="form-group container">
+							<label for="first_name2"></label>
+							<input
+								type="text"
+								id="first_name2"
+								name="first_name2"
+								placeholder="First Name" />
+							<input
+								type="text"
+								id="last_name2"
+								name="last_name2"
+								placeholder="Last Name" />
+						</div>
+						<div class="form-group container">
+							<label for="budget">Budget</label>
+							<select id="budget" name="budget">
+								<option value="">Select Budget</option>
+								<option value="100">$100</option>
+								<option value="500">$500</option>
+								<option value="1000">$1000</option>
+								<option value="5000">$5000</option>
+							</select>
+							<label for="country">Country</label>
+							<select id="country" name="country">
+								<option value="">Select Country</option>
+								<option value="USA">United States</option>
+								<option value="UK">United Kingdom</option>
+								<option value="CA">Canada</option>
+								<option value="AU">Australia</option>
+							</select>
+						</div>
+						<div class="form-group container">
+							<label for="comments"></label>
+							<textarea
+								rows="8"
+								cols="50"
+								id="comments"
+								name="comments"
+								placeholder="Tell us more about your project, needs, and timeline,
+								please..."></textarea>
+						</div>
+						<div class="form-group container">
+							<input
+								type="checkbox"
+								id="option1"
+								name="option"
+								value="option1" />
+							<label class="radio-label" for="option1"
+								>Yes, I'd like to receive occasional marketing emails from
+								Front. I have the right to opt out at any time.</label
+							>
+						</div>
+						<div class="link container">
+							<a href="#">View privacy policy</a>
+							<a href="#">View privacy policy</a>
+						</div>
+						<div class="btn-primary">
+							<a href="#" class="btn-primary" href="#" role="button"
+								>Get started</a
+							>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+
+		<footer>
+			<div class="footer-container">
+				<div class="top-footer container">
+					<div class="footer-address">
 						<img
-							class="pfps-small"
-							src="./SaaS-Project/saas-project-assets/people/woman_two.jpg"
+							src="./SaaS-Project/saas-project-assets/project_logo/logo.svg"
 							alt="" />
-						<img
-							class="pfps-small"
-							src="./SaaS-Project/saas-project-assets/people/woman_one.jpg"
-							alt="" />
-						<img
-							class="pfps-big"
-							src="./SaaS-Project/saas-project-assets/people/man_one.jpg"
-							alt="" />
+						<ul class="footer-list">
+							<li>
+								<i class="fa-solid fa-location-arrow"></i
+								><span>153 Williamson Plaza, Maggieberg</span>
+							</li>
+							<li>
+								<i class="fa-solid fa-phone"></i
+								><a href="#">+1 (062) 109-9222</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-company">
+						<h3>Company</h3>
+						<ul class="footer-list">
+							<li>About</li>
+							<li>Career <span>We're hiring</span></li>
+							<li>Blog</li>
+							<li>Customers</li>
+							<li>Hire us</li>
+						</ul>
+					</div>
+					<div class="footer-features">
+						<h3>Features</h3>
+						<ul class="footer-list">
+							<li>Press</li>
+							<li>Release notes</li>
+							<li>Integrations</li>
+							<li>Pricing</li>
+						</ul>
+					</div>
+					<div class="footer-documentation">
+						<h3>Documentation</h3>
+						<ul class="footer-list">
+							<li>Support</li>
+							<li>Docs</li>
+							<li>Status</li>
+							<li>API Reference</li>
+							<li>Tech Requirements</li>
+						</ul>
+					</div>
+					<div class="footer-resources">
+						<h3>Resources</h3>
+						<ul class="footer-list">
+							<li><i class="fa-solid fa-circle-info"></i>Help</li>
+							<li><i class="fa-solid fa-user"></i>Your account</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="container form-container form">
-				<form action="#" method="post">
-					<h3>
-						Fill out the form and we'll be in touch as soon as <br />
-						possible
-					</h3>
-					<div class="form-group">
-						<label for="first_name1"></label>
-						<input
-							type="text"
-							id="first_name1"
-							name="first_name1"
-							placeholder="First Name" />
-						<input
-							type="text"
-							id="last_name2"
-							name="last_name2"
-							placeholder="Last Name" />
+		</footer>
+		<section>
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="footer-socials">
+						<div class="social-nav">
+							<ul class="footer-list">
+								<li>Privacy & Policy</li>
+								<i class="fa-solid fa-greater-than"></i>
+								<li>Terms</li>
+								<i class="fa-solid fa-greater-than"></i>
+								<li>Site Map</li>
+							</ul>
+						</div>
 					</div>
-					<div class="form-group">
-						<label for="first_name2"></label>
-						<input
-							type="text"
-							id="first_name2"
-							name="first_name2"
-							placeholder="First Name" />
-						<input
-							type="text"
-							id="last_name2"
-							name="last_name2"
-							placeholder="Last Name" />
+					<div class="container">
+						<div class="socials">
+							<i class="fa-brands fa-facebook-f"></i>
+							<i class="fa-brands fa-google"></i>
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-brands fa-github"></i>
+						</div>
 					</div>
-					<div class="form-group">
-						<label for="budget">Budget</label>
-						<select id="budget" name="budget">
-							<option value="">Select Budget</option>
-							<option value="100">$100</option>
-							<option value="500">$500</option>
-							<option value="1000">$1000</option>
-							<option value="5000">$5000</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="country">Country</label>
-						<select id="country" name="country">
-							<option value="">Select Country</option>
-							<option value="USA">United States</option>
-							<option value="UK">United Kingdom</option>
-							<option value="CA">Canada</option>
-							<option value="AU">Australia</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="comments"></label>
-						<textarea
-							id="comments"
-							name="comments"
-							placeholder="Tell us more about your project, needs, and timeline,
-							please..."></textarea>
-					</div>
-					<div class="form-group">
-						<input type="radio" id="option1" name="option" value="option1" />
-						<label class="radio-label" for="option1"
-							>Yes, I'd like to receive occasional marketing emails from Front.
-							I have the right to opt out at any time.</label
-						>
-					</div>
-					<div class="link">
-						<a href="#">View privacy policy</a>
-						<a href="#">View privacy policy</a>
-					</div>
-				</form>
+				</div>
+				<div class="footer-copyright">
+					<p>&copyFront. 2022 Responsive designs. All rights reserved.</p>
+					<p>
+						When you visit or interact with our sites, services or tools, we or
+						our authorized service providers may use cookies for storing
+						information to help provide you with a better, faster and safer
+						experience and for marketing purposes.
+					</p>
+				</div>
 			</div>
 		</section>
 		<script>

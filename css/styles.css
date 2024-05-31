@@ -492,6 +492,10 @@ p {
 	margin: auto;
 }
 
+.price-section {
+	margin-bottom: 25px;
+}
+
 .price-text {
 	font-size: 26px;
 	text-align: center;
@@ -519,18 +523,14 @@ p {
 	margin-bottom: 10px;
 }
 
+.content-card {
+	display: flex;
+	flex-direction: column;
+}
+
 .content-card img {
 	display: block;
 	width: 50px;
-}
-
-.content-card h3 {
-	margin: 30px 0 0 0;
-	display: inline-block;
-}
-
-.content-card p {
-	margin-right: 80px;
 }
 
 .content-card .subtext {
@@ -601,15 +601,16 @@ p {
 }
 
 .hire-us-section {
+	background-color: #20335b;
 	display: flex;
 	justify-content: center;
 }
 
 .hire-us {
-	background-color: #20335b;
 	background-size: cover;
-	padding-bottom: 70px;
-	padding-left: ;
+	padding: 30px;
+	display: flex;
+	align-items: center;
 }
 
 .hire-us-text h3 {
@@ -633,6 +634,24 @@ hr {
 	color: var(--white);
 }
 
+.employees {
+	margin-top: 40px;
+}
+
+.employee-name {
+	color: var(--white);
+	font-size: var(--size-18);
+}
+
+.employee-job {
+	color: #677788;
+	font-size: var(--size-14);
+}
+
+.pfps {
+	margin-top: 20px;
+}
+
 .pfps img {
 	border-radius: 50%;
 }
@@ -650,6 +669,12 @@ hr {
 form {
 	background-color: var(--white);
 	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 14px;
+	gap: 10px;
 }
 
 .form-container {
@@ -660,7 +685,29 @@ form {
 
 input {
 	margin: 5px;
-	border-radius: 8px;
+	border-radius: 4px;
+	border: 1px solid #e6e8f2;
+	color: #828282;
+}
+
+input[type="checkbox"] {
+	box-sizing: border-box;
+	appearance: none;
+	background: white;
+	outline: 2px solid #e6e8f2;
+	border: 3px solid white;
+	width: 20px;
+	height: 16px;
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--black);
+}
+
+.form-group {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
 }
 
 .link {
@@ -669,4 +716,53 @@ input {
 }
 
 .link a {
+	color: #677788;
+	text-decoration: none;
+	border-bottom: 1px dashed #047cea;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-address img {
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+footer {
+	margin-top: 30px;
+}
+
+footer h3 {
+	margin-top: 0;
+}
+
+.footer-list li {
+	margin-top: 10px;
+	color: #677788;
+	font-size: 14px;
+}
+
+footer .fa-solid {
+	color: #677788;
+}
+
+.footer-company span {
+	background-color: #2576ff;
+	font-size: 8px;
+	border-radius: 26px;
+	padding: 5px 15px;
+	color: white;
+}
+
+.footer-copyright {
+	text-align: center;
 }
