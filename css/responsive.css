@@ -2,9 +2,9 @@
 	[aria-controls="navbarDropdown"] {
 		display: block;
 		position: absolute;
-		right: var(--size-10);
 		background-color: transparent;
 		border: 1px solid transparent;
+		top: 28px;
 	}
 
 	[aria-expanded="false"] ~ ul {
@@ -13,13 +13,12 @@
 
 	[aria-expanded="true"] ~ ul {
 		display: inline-flex;
-		position: absolute;
 		right: 0;
-		top: 60px;
+		top: 60;
 		background-color: var(--white);
 		width: 100%;
 		text-align: center;
-		padding: 40px 30px 0 30px;
+		padding: 40px 60px 0 30px;
 	}
 
 	[aria-expanded="true"] ~ ul li a {
@@ -46,6 +45,52 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: var(--size-20);
+	}
+
+	.hubspot-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hubspot-text {
+		text-align: center;
+	}
+
+	.employee-name {
+		color: var(--black);
+	}
+
+	.employee-job {
+		color: var(--black);
+	}
+
+	.trusted-text h3 {
+		margin-top: 0;
+	}
+
+	.price-plans-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-plan {
+		text-align: center;
+	}
+
+	.hire-us {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hire-us-text {
+		text-align: center;
+	}
+
+	.company-links {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
