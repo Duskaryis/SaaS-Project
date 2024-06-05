@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
@@ -438,8 +442,8 @@ p {
 }
 
 .hubspot-container {
-	display: grid;
-	grid-template-columns: min-content auto;
+	display: flex;
+	background-repeat: no-repeat;
 	gap: 80px;
 }
 
@@ -451,14 +455,16 @@ p {
 	background-size: 100%;
 	overflow: visible;
 	border: 5px;
+	background-repeat: no-repeat;
 }
 
 .hubspot-back-img {
-	position: absolute;
+	position: relative;
 	max-width: 240px;
-	left: -55px;
-	bottom: -50px;
+	left: -59px;
+	bottom: -86px;
 	z-index: -1;
+	height: 53%;
 }
 
 .hubspot-text {
@@ -626,7 +632,6 @@ p {
 
 .hire-us-section {
 	background-color: #20335b;
-	display: flex;
 	justify-content: center;
 }
 

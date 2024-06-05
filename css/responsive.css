@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+}
+
 @media screen and (max-width: 768px) {
 	[aria-controls="navbarDropdown"] {
 		display: block;
@@ -30,11 +34,6 @@
 	.hero-section {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.hero-wrapper {
-		text-align: center;
-		padding-bottom: 70px;
 	}
 
 	.learn-more {
@@ -95,13 +94,20 @@
 }
 
 @media screen and (max-width: 480px) {
-	.hero-wrapper {
-		text-align: center;
-	}
-
 	.service-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: var(--size-20);
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.form-group .checkbox {
+		display: flex;
+		flex-direction: row;
 	}
 }
