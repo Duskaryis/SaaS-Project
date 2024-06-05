@@ -31,9 +31,22 @@
 		display: flex;
 	}
 
+	.navbar-brand {
+		margin-right: 0;
+	}
+
 	.hero-section {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.hero-wrapper {
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	.hero-header .btn-pirmary {
+		margin-top: 10px;
 	}
 
 	.learn-more {
@@ -50,6 +63,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.hubspot-back-img {
+		height: 100%;
+		left: -80px;
+		bottom: -91px;
 	}
 
 	.hubspot-text {
@@ -87,6 +106,11 @@
 		text-align: center;
 	}
 
+	.hire-us-hr {
+		text-align: center;
+		width: 100%;
+	}
+
 	.company-links {
 		display: flex;
 		flex-direction: column;
@@ -109,5 +133,64 @@
 	.form-group .checkbox {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.top-cards {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bottom-cards {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-left img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-list {
+		text-align: center;
+	}
+
+	.company-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-left {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-footer {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.company-links h3 {
+		text-align: center;
+	}
+
+	.bottom-footer {
+		display: flex;
+		flex-direction: column;
 	}
 }
